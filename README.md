@@ -1,47 +1,43 @@
-# Awesome Interaction-aware Behavior and Trajectory Prediction
-![Version](https://img.shields.io/badge/Version-1.1-ff69b4.svg) ![LastUpdated](https://img.shields.io/badge/LastUpdated-2020.11-lightgrey.svg)![Topic](https://img.shields.io/badge/Topic-trajectory--prediction-yellow.svg?logo=github)
+# Awesome Trajectory Prediction for Vehicles and Pedestrain
+![Version](https://img.shields.io/badge/Version-0.0.1-blue) 
+![LastUpdated](https://img.shields.io/badge/LastUpdated-2021.09-lightgrey.svg)
+![Topic](https://img.shields.io/badge/Topic-trajectory--prediction-yellow.svg?logo=github) 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-This is a checklist of state-of-the-art research materials (datasets, blogs, papers and public codes) related to trajectory prediction. Wish it could be helpful for both academia and industry. (Still updating)
+<p align="center">
+  <img width="250" src="https://camo.githubusercontent.com/1131548cf666e1150ebd2a52f44776d539f06324/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f6d61737465722f6d656469612f6c6f676f2e737667"
+	"Awesome!">
+</p>
 
-**Maintainers**: [**Jiachen Li**](https://jiachenli94.github.io), Hengbo Ma, Jinning Li (University of California, Berkeley)
+This is a checklist of some research materials, including public datasets, surveys, papers with public codes, and blogs, on trajectory prediction.
+The literatures are categorized by the type of target agent (pedestrain or vehicle) and the modelling approaches (CNN, RNN, and GNN).
 
-**Emails**: {jiachen_li, hengbo_ma, jinning_li}@berkeley.edu
+**Maintainers**: {[**Jianbang Liu**](https://henry1iu.github.io/homepage/), Xinyu Mao} @ EE Department, The Chinese University of Hong Kong
+
+**Emails**: {henryliu, maoxinyu}@connect.cuhk.edu.hk
 
 Please feel free to pull request to add new resources or send emails to us for questions, discussion and collaborations.
 
-**Note**: [**Here**](https://github.com/jiachenli94/Awesome-Decision-Making-Reinforcement-Learning) is also a collection of materials for reinforcement learning, decision making and motion planning.
-
-
+**Note**: This repository is built based on [**Awesome Interaction-aware Behavior and Trajectory Prediction**](https://github.com/jiachenli94/Awesome-Interaction-aware-Trajectory-Prediction).
+Thanks for the maintainers' contribution. 
 
 Please consider citing our work if you found this repo useful:
 
 ```
-@inproceedings{li2020evolvegraph,
-  title={EvolveGraph: Multi-Agent Trajectory Prediction with Dynamic Relational Reasoning},
-  author={Li, Jiachen and Yang, Fan and Tomizuka, Masayoshi and Choi, Chiho},
-  booktitle={2020 Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2020}
-}
 
-@inproceedings{li2019conditional,
-  title={Conditional Generative Neural System for Probabilistic Trajectory Prediction},
-  author={Li, Jiachen and Ma, Hengbo and Tomizuka, Masayoshi},
-  booktitle={2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={6150--6156},
-  year={2019},
-  organization={IEEE}
-}
+
 ```
 
 ### Table of Contents
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave: orderedList:0 -->
 - [**Datasets**](#datasets)
 	- [Vehicles and Traffic](#vehicles-and-traffic)
 	- [Pedestrians](#pedestrians)
-	- [Sport Players](#sport-players)
+	
 - [**Literature and Codes**](#literature-and-codes)
 	- [Survey Papers](#survey-papers)
+		- [kk]()
 	- [Physics Systems with Interaction](#physics-systems-with-interaction)
 	- [Intelligent Vehicles & Traffic](#intelligent-vehicles-traffic)
 	- [Pedestrians](#pedestrians-1)
@@ -49,9 +45,10 @@ Please consider citing our work if you found this repo useful:
 	- [Sport Players](#sport-players)
 	- [Benchmark and Evaluation Metrics](#benchmark-and-evaluation-metrics)
 	- [Others](#others)
-	<!-- /TOC -->
+<!-- /TOC -->
 
 ## **Datasets**
+
 ### Vehicles and Traffic
 
 |                           Dataset                            |            Agents            |         Scenarios         |        Sensors         |
@@ -91,13 +88,6 @@ Please consider citing our work if you found this repo useful:
 |           [PIE](http://data.nvision2.eecs.yorku.ca/PIE_dataset/)            |           People            |         Urban         |     Camera     |
 |           [ForkingPaths](https://next.cs.cmu.edu/multiverse/index.html)            |           People            |         Urban / Simulation         |     Camera     |
 |           [TrajNet++](https://www.aicrowd.com/challenges/trajnet-a-trajectory-forecasting-challenge)            |           People            |         Urban         |     Camera     |
-### Sport Players
-
-|                           Dataset                            | Agents |     Scenarios     | Sensors |
-| :----------------------------------------------------------: | :----: | :---------------: | :-----: |
-|     [Football](https://datahub.io/collections/football)      | People |  Football field   | Camera  |
-| [NBA SportVU](https://github.com/linouk23/NBA-Player-Movements) | People |  Basketball Hall  | Camera  |
-|      [NFL](https://github.com/a-vhadgar/Big-Data-Bowl)       | People | American Football | Camera  |
 
 ## **Literature and Codes**
 
@@ -309,23 +299,6 @@ Please consider citing our work if you found this repo useful:
 - Predicting future agent motions for dynamic environments, ICMLA 2016. \[[paper](https://www.semanticscholar.org/paper/Predicting-Future-Agent-Motions-for-Dynamic-Previtali-Bordallo/2df8179ac7b819bad556b6d185fc2030c40f98fa)\]
 - Bayesian intention inference for trajectory prediction with an unknown goal destination, IROS 2015. \[[paper](http://ieeexplore.ieee.org/abstract/document/7354203/)\]
 - Learning to predict trajectories of cooperatively navigating agents, ICRA 2014. \[[paper](https://ieeexplore.ieee.org/document/6907442)\]
-
-
-### Sport Players
-
-- EvolveGraph: Multi-Agent Trajectory Prediction with Dynamic Relational Reasoning, NeurIPS 2020. \[[paper](https://arxiv.org/abs/2003.13924)\]
-- Imitative Non-Autoregressive Modeling for Trajectory Forecasting and Imputation, CVPR 2020. [[paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Qi_Imitative_Non-Autoregressive_Modeling_for_Trajectory_Forecasting_and_Imputation_CVPR_2020_paper.html)]
-- DAG-Net: Double Attentive Graph Neural Network for Trajectory Forecasting, ICPR 2020. \[[paper](https://arxiv.org/abs/2005.12661)\] \[[code](https://github.com/alexmonti19/dagnet)\]
-- Diverse Generation for Multi-Agent Sports Games, CVPR 2019. \[[paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Yeh_Diverse_Generation_for_Multi-Agent_Sports_Games_CVPR_2019_paper.html)\]
-- Stochastic Prediction of Multi-Agent Interactions from Partial Observations, ICLR 2019. \[[paper](http://arxiv.org/abs/1902.09641v1)\]
-- Generating Multi-Agent Trajectories using Programmatic Weak Supervision, ICLR 2019. \[[paper](http://arxiv.org/abs/1803.07612v6)\]
-- Generative Multi-Agent Behavioral Cloning, ICML 2018. \[[paper](http://www.stephanzheng.com/pdf/Zhan_Zheng_Lucey_Yue_Generative_Multi_Agent_Behavioral_Cloning.pdf)\]
-- Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. \[[paper](http://openaccess.thecvf.com/content_ECCV_2018/papers/Panna_Felsen_Where_Will_They_ECCV_2018_paper.pdf)\]
-- Coordinated Multi-Agent Imitation Learning, ICML 2017. \[[paper](http://arxiv.org/abs/1703.03121v2)\]
-- Generating long-term trajectories using deep hierarchical networks, 2017. \[[paper](https://arxiv.org/abs/1706.07138)\]
-- Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction, ICDM 2014. \[[paper](http://www.yisongyue.com/publications/icdm2014_bball_predict.pdf)]
-- Generative Modeling of Multimodal Multi-Human Behavior, 2018. \[[paper](https://arxiv.org/pdf/1803.02015.pdf)\]
-- What will Happen Next? Forecasting Player Moves in Sports Videos, ICCV 2017, \[[paper](http://openaccess.thecvf.com/content_ICCV_2017/papers/Felsen_What_Will_Happen_ICCV_2017_paper.pdf)\]
 
 ### Benchmark and Evaluation Metrics
 - OpenTraj: Assessing Prediction Complexity in Human Trajectories Datasets, ACCV 2020. \[[paper](https://arxiv.org/abs/2010.00890)] \[[code](https://github.com/crowdbotp/OpenTraj)]
