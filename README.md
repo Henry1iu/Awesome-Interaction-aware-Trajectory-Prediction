@@ -103,12 +103,17 @@ Please consider citing our work if you found this repo useful:
 ```
 We use following tag to indicte the modelling detail of the approach:
 
-[Scene: {Graph, BEV, None}]: The representatioin of scene context information{Graph, BEV}, or not include {None}.
-[Hist: {MLP(Attention), CNN, RNN, GNN}]: This historical observation of the agent trajectory is encoded by {MLP, CNN, RNN, GNN} module.
-[InterX: {MLP(Attention), CNN, RNN, GNN, None}]: The explict interaction modeling of the approach. 
+(Scene: {Graph, BEV, None}): The representatioin of scene context information{Graph, BEV}, or not include {None}.
+(Hist: {MLP(Attention), CNN, RNN, GNN}): This historical observation of the agent trajectory is encoded by {MLP, CNN, RNN, GNN} module.
+(InterX: {MLP(Attention), CNN, RNN, GNN, None}): The explict interaction modeling of the approach. 
 ```
 
 ### Vehicles & Traffic
+- Deep Neural Networks for Markovian Interactive Scene Prediction in Highway Scenarios, IEEE IV 2017. (**Hist**: MLP)(**Scene**: None)(**InterX**: None) [[paper](https://ieeexplore.ieee.org/document/7995797)]
+- DESIRE: Distant Future Prediction in Dynamic Scenes with Interacting Agents, CVPR 2017. (**Hist**: RNN)(**Scene**: CNN)(**InterX**: CNN) [[paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lee_DESIRE_Distant_Future_CVPR_2017_paper.pdf)][[code](https://github.com/tdavchev/DESIRE)]
+- VectorNet: Encoding HD Maps and Agent Dynamics, CVPR 2020. (**Hist**: MLP)(**Scene**: Graph)(**InterX**: Attention) [[paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Gao_VectorNet_Encoding_HD_Maps_and_Agent_Dynamics_From_Vectorized_Representation_CVPR_2020_paper.pdf)][[code](https://github.com/Henry1iu/TNT-Trajectory-Predition)]
+- TNT: Target-driveN Trajectory Prediction, CoRL 2020. (**Hist**: MLP) (**Scene**: Graph) (**InterX**: Attention) [[paper](https://arxiv.org/abs/2008.08294)][[code](https://github.com/Henry1iu/TNT-Trajectory-Predition)]
+- 
 
 ### Pedestrians
 
